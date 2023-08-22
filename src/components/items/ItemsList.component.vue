@@ -10,11 +10,12 @@
 </template>
 <script lang="ts">
 import { defineComponent, PropType } from 'vue';
+import {ItemInterface } from '@/models/items/Item.interface'
 
 export default defineComponent({
     props: {
         items: {
-            type: Array as PropType<any[]>
+            type: Array as PropType<ItemInterface[]>
         }
     }
 })
