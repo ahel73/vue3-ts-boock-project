@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+<div class="home">
+    <ItemsListComonent :items="items" />
+</div>
 </template>
-
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import { defineComponent } from 'vue'
+import ItemsListComonent from '@/components/items/ItemsList.component.vue'
 
 export default defineComponent({
-  name: 'HomeView',
+  name: 'Home',
   components: {
-    HelloWorld,
+    ItemsListComonent
   },
-});
+  setup() {
+    const items: any[] = [
+      { id: 1, name: 'item 1' },
+      {id: 2, name: 'item 2'},
+    ]
+
+    return {items}
+  }
+})
 </script>
+
