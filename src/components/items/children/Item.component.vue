@@ -27,6 +27,7 @@
             const onClick = () => {
                 emit('select', props.model)
             }
+
             return {
                 cssClass,
                 onClick
