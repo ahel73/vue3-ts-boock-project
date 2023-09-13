@@ -6,6 +6,6 @@ import { ItemInterface } from '@/models/items/Item.interface'
 * Интерфейс состояния Items
 */
 export interface ItemsStateInterface {
-loading: boolean
-items: ItemInterface[]
+  loading: boolean
+  items: ItemInterface[]
 }
