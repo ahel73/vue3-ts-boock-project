@@ -17,9 +17,9 @@ export class ItemsApiClientModel implements ItemsApiClientInterface {
 
   fetchItems(): Promise<ItemInterface[]> {
     const getParameters: HttpRequestParamsInterface<undefined> = {
-    url: this.urls.fetchItems,
-    requiresToken: false
-  }
-return HttpClient.get<ItemInterface[], undefined>(getParameters)
+      url: this.urls.fetchItems,
+      requiresToken: false
+    }
+    return HttpClient.get<ItemInterface[], undefined>(getParameters)
   }
 }
