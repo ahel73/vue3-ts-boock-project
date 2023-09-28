@@ -1,0 +1,40 @@
+/** 
+ * flag-icons v.3.0.0 (14-04-2020) 
+ * a beautiful svg + png + sass + css collection of 261 flags. 
+ * visit https://github.com/yammadev/flag-icons#readme for details. 
+ * made by yefferson marín - https://github.com/yammadev. 
+ */
+i.flag-icons {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  line-height: 1em;
+  height: 1em;
+  width: 1.3333333333em;
+}
+i.flag-icons.square {
+  height: 1em;
+  width: 1em;
+}
+i.flag-icons:before {
+  content: " ";
+}
+i.flag-icons.es {
+  background-image: url(svg-flags/es.svg);
+}
+i.flag-icons.fr {
+  background-image: url(svg-flags/fr.svg);
+}
+i.flag-icons.it {
+  background-image: url(svg-flags/it.svg);
+}
+i.flag-icons.ru {
+  background-image: url(svg-flags/ru.svg);
+}
+i.flag-icons.us {
+  background-image: url(svg-flags/us.svg);
+}
+
+/*# sourcemappingurl=flag-icons.css.map */
