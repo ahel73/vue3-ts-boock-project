@@ -10,3 +10,4 @@ export * from './root/RootStore.model'
 // GEN-EXPORTS
 // Экспортируйте здесь новые модули состояния
 export * from './items/ItemsState.interface'
+export * from './locales/LocalesState.interface'
